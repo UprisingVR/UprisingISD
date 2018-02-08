@@ -53,6 +53,27 @@
 						<ActiveSource Name="Wwise Synth One" ID="{DDBB3A47-15E2-4748-9C14-437E61A02DD3}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="TheVoyce" ID="{E1C084A5-3796-467A-A0FA-3BAAF2194787}" ShortID="323683819">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52434EA7-1574-42B8-96E6-C27401AD4B8B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091D2D79-6F8D-44AD-A5BD-C03DF39D911F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Wwise Audio Input" ID="{20CE6F4A-6E9E-445C-BFE6-03658C8923AF}" ShortID="396072020" PluginName="Wwise Audio Input" CompanyID="0" PluginID="200">
+							<Language>English(US)</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Wwise Audio Input" ID="{20CE6F4A-6E9E-445C-BFE6-03658C8923AF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
