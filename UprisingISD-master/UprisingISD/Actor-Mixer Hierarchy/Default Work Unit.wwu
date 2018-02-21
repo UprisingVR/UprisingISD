@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2A95EA98-F304-4CD9-B39E-5F3C1F71DBFE}" SchemaVersion="85">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{2A95EA98-F304-4CD9-B39E-5F3C1F71DBFE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Test" ID="{EE2D40CA-1734-40E3-B56A-E9BF451ECC8F}" ShortID="338175599">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52434EA7-1574-42B8-96E6-C27401AD4B8B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091D2D79-6F8D-44AD-A5BD-C03DF39D911F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Wwise Synth One" ID="{DDBB3A47-15E2-4748-9C14-437E61A02DD3}" ShortID="551697610" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+							<PropertyList>
+								<Property Name="OutputLevel" Type="Real32">
+									<RTPCList>
+										<RTPC Name="" ID="{0B0F32A9-FEFC-4147-9120-2713DAE28166}" ShortID="934861744">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom>
+														<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{BFBC334E-8A8E-4A81-81DD-C8F935C7D8D7}" ShortID="865234780"/>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2749B803-9F81-4DE1-9542-21F84D2D9398}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-96</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Wwise Synth One" ID="{DDBB3A47-15E2-4748-9C14-437E61A02DD3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TheVoyce" ID="{E1C084A5-3796-467A-A0FA-3BAAF2194787}" ShortID="323683819">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52434EA7-1574-42B8-96E6-C27401AD4B8B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091D2D79-6F8D-44AD-A5BD-C03DF39D911F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Wwise Audio Input" ID="{20CE6F4A-6E9E-445C-BFE6-03658C8923AF}" ShortID="396072020" PluginName="Wwise Audio Input" CompanyID="0" PluginID="200">
+							<Language>English(US)</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Wwise Audio Input" ID="{20CE6F4A-6E9E-445C-BFE6-03658C8923AF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
